@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>saylani</title>
+</head>
+<body>
+    <h1>TABLES</h1>
+    <input type="number" placeholder="enter value" id="input1">
+    <input type="number" placeholder="enter value" id="input2">
+    <br>
+    <br>
+    <button onclick="on()">click me!!</button>
+
+
+    <script>
+        function on(){
+        let inp1 = document.querySelector("#input1").value;
+        let inp2 = document.querySelector("#input2").value;
+
+        for(i = 1; i < inp2; i++){
+            // alert(inp1 + " x " + i + " = " + (inp1 * i) + "<br>");
+            console.log(inp1 + " x " + i + " = " + (inp1 * i) + "<br>");
+            document.write(inp1 + " x " + i + " = " + (inp1 * i) + "<br>");
+        }
+    }
+    </script>
+</body>
+</html>
